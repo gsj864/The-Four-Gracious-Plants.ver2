@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사군자 기질검사 – 검사</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드">🌙</button>
+  <div class="app">
+    <header class="test-header">
+      <div class="test-header-title">사군자 기질검사</div>
+    </header>
+    <section class="screen active" id="screenQuestion">
+      <div class="progress-wrap">
+        <button type="button" class="btn-back" id="btnBack">이전</button>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 5%;"></div>
+        </div>
+        <span id="progressText">1 / 20</span>
+      </div>
+      <p class="question-prompt">다음 중 자신을 가장 잘 표현하는 단어를 선택하세요.</p>
+      <p class="question-prompt sub">○ 가장 가까움 &nbsp; △ 그다음 가까움</p>
+      <div class="options-grid" id="optionsGrid"></div>
+      <div class="nav-buttons">
+        <button type="button" class="btn btn-prev" id="btnPrev" disabled>이전</button>
+        <button type="button" class="btn btn-next" id="btnNext">다음</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screenResult">
+      <div class="result-hero" id="resultHero">
+        <div class="emoji" id="resultEmoji">🎋</div>
+        <div class="type-label">당신의 유형</div>
+        <div class="type-name" id="resultTypeName">외향 대나무</div>
+      </div>
+      <div class="result-block">
+        <h3>핵심 성향</h3>
+        <ul id="resultTraits"></ul>
+      </div>
+      <div class="result-block">
+        <h3>장점</h3>
+        <ul id="resultStrengths"></ul>
+      </div>
+      <div class="result-block">
+        <h3>주의점</h3>
+        <ul id="resultCautions"></ul>
+      </div>
+      <div class="result-block">
+        <h3>잘 맞는 유형</h3>
+        <div class="match-cards" id="resultMatch"></div>
+      </div>
+      <div class="result-footer">
+        <button type="button" class="btn-retry" id="btnRetry">다시 검사하기</button>
+      </div>
+    </section>
+  </div>
+  <script src="theme.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
