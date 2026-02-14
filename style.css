@@ -65,6 +65,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Noto Serif KR", "Malgun Gothic", serif;
+  font-size: 1.08rem;
+  font-weight: 700;
   background: var(--paper);
   background-image:
     radial-gradient(ellipse at 20% 30%, rgba(232, 226, 217, 0.4) 0%, transparent 50%),
@@ -100,7 +102,7 @@ body {
   background: var(--hanji);
   color: var(--ink);
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,14 +128,15 @@ body {
 }
 
 .page-main .start-header .logo {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.15rem;
+  font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
 }
 
 .page-main .start-header .sub {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+  font-weight: 600;
   color: var(--muted);
 }
 
@@ -142,7 +145,7 @@ body {
   padding: 1.5rem;
   border-radius: 12px;
   margin: 1.5rem 0;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   border: 1px solid rgba(44, 24, 16, 0.06);
   box-shadow: 0 2px 8px var(--shadow);
 }
@@ -157,9 +160,10 @@ body {
 
 .page-main .start-meta {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--muted);
   margin: 1rem 0 2rem;
+  font-weight: 600;
 }
 
 .btn-start {
@@ -169,7 +173,7 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
   font-family: inherit;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   background: var(--btn-primary-bg);
   color: var(--btn-primary-fg);
@@ -194,8 +198,8 @@ body {
 }
 
 .test-header-title {
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: 1.9rem;
+  font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--ink);
 }
@@ -220,8 +224,9 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--muted);
+  font-weight: 600;
 }
 
 .progress-bar {
@@ -244,7 +249,8 @@ body {
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--muted);
   cursor: pointer;
   padding: 0.25rem 0;
@@ -257,14 +263,14 @@ body {
 /* 문항 */
 .question-prompt {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
 
 .question-prompt.sub {
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 600;
   margin-top: -0.75rem;
 }
 
@@ -282,7 +288,8 @@ body {
   transition: transform 0.15s, box-shadow 0.15s;
   border: 2px solid transparent;
   position: relative;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+  font-weight: 700;
   min-height: 72px;
   display: flex;
   align-items: center;
@@ -303,7 +310,7 @@ body {
 .option-card.selected-primary {
   border-color: var(--ink);
   box-shadow: inset 0 0 0 2px var(--paper);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .option-card.selected-secondary {
@@ -337,7 +344,7 @@ body {
   flex: 1;
   padding: 0.9rem;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.08rem;
   font-weight: 600;
   border-radius: 10px;
   cursor: pointer;
@@ -379,18 +386,19 @@ body {
 }
 
 .result-hero .emoji {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   margin-bottom: 0.5rem;
 }
 
 .result-hero .type-label {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--muted);
 }
 
 .result-hero .type-name {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.75rem;
+  font-weight: 800;
   margin: 0.25rem 0;
 }
 
@@ -420,7 +428,7 @@ body {
 }
 
 .result-block h3 {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   margin: 0 0 0.75rem;
   color: var(--muted);
   font-weight: 600;
@@ -433,6 +441,7 @@ body {
 
 .result-block li {
   margin-bottom: 0.35rem;
+  font-weight: 700;
 }
 
 .match-cards {
@@ -444,7 +453,8 @@ body {
 .match-tag {
   padding: 0.4rem 0.75rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
   background: var(--hanji);
 }
 
@@ -479,7 +489,7 @@ body {
   width: 100%;
   padding: 0.75rem 1rem;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 600;
   background: var(--btn-primary-bg);
   color: var(--btn-primary-fg);
